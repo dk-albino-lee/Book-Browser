@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="below_header_pdd">15dp</dimen>
+
+    <dimen name="no_data_text">18sp</dimen>
+    <dimen name="no_data_icon">52dp</dimen>
+    <dimen name="no_data_btw">5dp</dimen>
+
+    <dimen name="header">52dp</dimen>
+    <dimen name="header_pdd">10dp</dimen>
+    <dimen name="title">20sp</dimen>
+    <dimen name="subtitle">14sp</dimen>
+    <dimen name="browse_area_pdd">15dp</dimen>
+
+    <dimen name="btn_browse_h">36dp</dimen>
+
+    <dimen name="input">13sp</dimen>
+
+    <dimen name="book_adapter_pdd_v">10dp</dimen>
+    <dimen name="book_adapter_pdd_h">5dp</dimen>
+    <dimen name="book_thumbnail_w">100dp</dimen>
+    <dimen name="book_thumbnail_h">150dp</dimen>
+    <dimen name="book_adapter_text">13sp</dimen>
+    <dimen name="book_adapter_text_pdd">3dp</dimen>
+
+    <dimen name="recently_browsed_pdd_h">10dp</dimen>
+    <dimen name="browsed_record_pdd_v">12dp</dimen>
+    <dimen name="browsed_record_pdd_h">6dp</dimen>
+    <dimen name="browsed_record_text">15sp</dimen>
+
+</resources>

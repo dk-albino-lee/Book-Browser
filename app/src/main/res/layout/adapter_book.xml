@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="data"
+            type="com.movingroot.flowassignment.data.model.Book" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/book_adapter_pdd_h"
+        android:paddingVertical="@dimen/book_adapter_pdd_v">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="@dimen/book_thumbnail_w"
+            android:layout_height="@dimen/book_thumbnail_h"
+            android:contentDescription="@string/book_thumbnail_desc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/book_adapter_text"
+            android:text="@{@string/book_title(data.title)}"
+            app:layout_constraintBottom_toTopOf="@id/author"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/thumbnail"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/author"
+            style="@style/book_adapter_text"
+            android:text="@{@string/book_author(data.author)}"
+            app:layout_constraintBottom_toTopOf="@id/publisher"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/title"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <TextView
+            android:id="@+id/publisher"
+            style="@style/book_adapter_text"
+            android:text="@{@string/book_publisher(data.publisher)}"
+            app:layout_constraintBottom_toTopOf="@id/price"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/title"
+            app:layout_constraintTop_toBottomOf="@id/author" />
+
+        <TextView
+            android:id="@+id/price"
+            style="@style/book_adapter_text"
+            android:text="@{@string/book_price(data.discount)}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/title"
+            app:layout_constraintTop_toBottomOf="@id/publisher" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

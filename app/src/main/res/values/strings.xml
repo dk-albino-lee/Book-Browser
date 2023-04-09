@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Book Browser</string>
+
+    <string name="browse_book">책 검색</string>
+    <string name="recently_browsed">최근 검색어</string>
+    <string name="browse_hint">책 제목이나 ISBN을 입력해주세요</string>
+    <string name="browse">검색</string>
+    <string name="browse_failed_title">검색에 실패했습니다</string>
+    <string name="browsed_failed_message">네트워크 환경을 확인해 주세요.\n문제가 없을 경우, 네이버 서버의 문제일 수 있습니다.</string>
+    <string name="no_browsed_result">검색 결과가 존재하지 않습니다.</string>
+
+    <string name="confirm">확인</string>
+
+    <string name="book_thumbnail_desc">도서의 표지 이미지입니다.</string>
+    <string name="book_title">제목: %1$s</string>
+    <string name="book_author">저자: %1$s</string>
+    <string name="book_publisher">출판사: %1$s</string>
+    <string name="book_price">가격: %1$s</string>
+
+    <string name="recently_browsed_title">최근 검색</string>
+    <string name="clear_all_records">기록 전부 삭제</string>
+    <string name="no_recently_browsed_record">최근 검색 기록이 존재하지 않습니다.</string>
+
+    <string name="empty"></string>
+</resources>
